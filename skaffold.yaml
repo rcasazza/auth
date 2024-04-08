@@ -3,7 +3,10 @@ kind: Config
 build:
   local:
     push: false
+  # googleCloudBuild:
+  #   projectId: microservices-class-udemy
   artifacts:
+  #  - image: us.gcr.io/microservices-class-udemy/auth
     - image: beserkobob/auth
       context: auth
       docker:
